@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cachorro chupetao</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffddf5, #a6c1ee);
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(110, 110, 110, 0.352);
+
+            width: 50%;
+            margin: 20px auto;
+
+            border-radius: 10px;
+            border: 2px solid;
+            border-color: #ffbeed;
+
+
+            display: flex;
+            justify-content: center;
+
+            gap: 50px;
+        }
+
+        footer {
+            background-color: rgba(166, 166, 166, 0.301);
+            border-radius: 20px;
+            border: 2px solid #ffbeed;
+        }
+
+        .tela {
+            display: none;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .ativa {
+            display: block;
+        }
+
+        .balao {
+            width: 30%;
+            height: auto;
+            margin: 0 auto;
+            background-color: rgba(166, 166, 166, 0.301);
+
+            border-radius: 35px;
+            border: 2px solid #fbc2eb8f;
+
+
+            padding: 20px;
+            margin-bottom: 10px;
+
+        }
+
+        .balao img {
+            display: block;
+            width: 100%;
+            border-radius: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .linha {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .linha .balao {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .texto {
+            color: rgb(255, 255, 255);
+            display: block;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 132, 132);
+            border-radius: 20px;
+        }
+
+        .slideshow img {
+            width: 100%;
+            border-radius: 40px;
+        }
+
+        .slideshow button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 132, 132, 0.8);
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header style="color: aliceblue;">
+        <a onclick="mudarTela('Home')">Inicio </a>
+        <a onclick="mudarTela('Curso')">Curso </a>
+        <a onclick="mudarTela('Destaques')">Destaques </a>
+        <a onclick="mudarTela('SaibaMais')">Saiba mais</a>
+    </header>
+
+    <div id="Home" class="tela ativa">
+        <div class="balao">
+            <h1 class="texto" style="text-align: center;">Globo.com</h1>
+        </div>
+        <div class="balao">
+            <div class="texto">
+                <p> isso foi oq o cachorro chupetao disse</p>
+                <p> Alias</p>
+                <p><b>NÃO CLIQUE NO CACHORRO CHUPETÃO</b></p>
+            </div>
+
+        </div>
+        <div class="balao">
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=C56-VLorpPCP-jmK" target="_blank" rel="noopener noreferrer">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Dp8wYxXZA3PO7014M1Wuz0QOAYYM9Gk1Q&s">
+            </a>
+        </div>
+    </div>
+
+    <div id="Curso" class="tela">
+        <div class="balao">
+            <h1 class="texto" style="text-align: center;">Vc fez o curso?</h1>
+        </div>
+        <div class="balao">
+            <div class="texto">
+                <p> o curso é muito importante poxa</p>
+                <p> tuzs tusz</p>
+                <p><b>NÃO CLIQUE NO CERTIFICADO</b></p>
+            </div>
+
+        </div>
+        <div class="balao">
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=C56-VLorpPCP-jmK" target="_blank" rel="noopener noreferrer">
+                <img src="https://pbs.twimg.com/media/EvAmTH-XIAU5hpb.jpg">
+            </a>
+        </div>
+    </div>
+
+    <div id="Destaques" class="tela ">
+        <div class="linha">
+            <button onclick="mudarSlide(-1)">❮</button>
+            <div class="slideshow" style="margin: 0 60px;">
+                <div class="slide">
+                    <div class="linha">
+                        <div class="balao texto">
+                            <p> OIEOEIOEIO</p>
+                            <p> Esse é o crack mauro shaampoo</p>
+                            <p> Ele é simplesmente o melhor do esporte</p>
+                            <p> ele recriou oque entendemos por futebol</p>
+                            <p> Em um bos seus maiores fe</p>
+                        </div>
+                        <div class="balao">
+                            <img
+                                src="https://s2-ge.glbimg.com/ZyL9BHcx2jXWd5APoIovmMxdmMk=/0x0:866x1126/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2018/05/31/shampoo_islandia.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="linha">
+                        <div class="balao texto">
+                            <p> OIEOEIOEIO</p>
+                            <p> Esse é o crack mauro shaampoo</p>
+                            <p> Ele é simplesmente o melhor do esporte</p>
+                            <p> ele recriou oque entendemos por futebol</p>
+                            <p> Em um bos seus maiores fe</p>
+                        </div>
+                        <div class="balao">
+                            <img
+                                src="https://conteudo.imguol.com.br/c/esporte/19/2024/12/13/alex-muralha-goleiro-do-mirassol-durante-jogo-contra-o-santos-pela-serie-b-do-brasileirao-1734117700030_v2_3x4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="linha">
+                        <div class="balao texto">
+                            <p> OIEOEIOEIO</p>
+                            <p> Esse é o crack mauro shaampoo</p>
+                            <p> Ele é simplesmente o melhor do esporte</p>
+                            <p> ele recriou oque entendemos por futebol</p>
+                            <p> Em um bos seus maiores fe</p>
+                        </div>
+                        <div class="balao">
+                            <img src="https://images3.memedroid.com/images/UPLOADED930/638ea17ec05a2.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button onclick="mudarSlide(1)">❯</button>
+        </div>
+
+    </div>
+
+    <div id="SaibaMais" class="tela" style="text-align: center; margin-bottom: 20%; margin-top: 20%;">
+        <a href="https://saibamais.jor.br/">Saiba mais</a>
+    </div>
+
+    <footer>
+        <div class="texto" style="text-align: center;">
+            <p> Obgd por entrar no meu site</p>
+        </div>
+    </footer>
+</body>
+<script>
+    function mudarTela(idTela) {
+        const telas = document.querySelectorAll('.tela');
+
+        telas.forEach(function (tela) {
+            tela.classList.remove('ativa');
+        })
+
+        document.getElementById(idTela).classList.add('ativa');
+    }
+
+    let slideindex = 0;
+    mostrarSlide(slideindex);
+
+    function mudarSlide(quant) {
+        mostrarSlide(slideindex + quant);
+    }
+    function mostrarSlide(n) {
+        const slides = document.querySelectorAll('.slide');
+
+        if (n >= slides.length) {
+            slideindex = 0
+        } else if (n < 0) {
+            slideindex = slides.length - 1;
+        } else {
+            slideindex = n
+        }
+
+        slides.forEach((slide) => slide.classList.remove('ativa'));
+
+        slides[slideindex].classList.add('ativa');
+    }
+</script>
+
+</html>
