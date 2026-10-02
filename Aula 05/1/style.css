@@ -1,0 +1,33 @@
+p{
+    color: green;
+}
+
+.destaque p{
+    background-color: yellow;
+}
+
+.menu li{
+    font-weight: bold;
+    padding: 10px;
+}
+
+li{
+    width: 20%;
+    transition: all ease 0.5s;
+    text-align: left;
+}
+li:nth-child(even){
+    color: blue;
+}
+li:first-child{
+    background-color: rgb(65, 65, 65);
+}
+li:last-child{
+    background-color: rgb(62, 62, 62);
+}
+li:hover{
+    margin-left: 20px;
+    background-color: rgb(223, 147, 255);
+    color: #000;
+    font-size: 40px;
+}
